@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Nutricional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora Nutricional</h2>
+
+        <!-- IMC -->
+        <h3>Calcule seu IMC</h3>
+        <input type="number" id="alturaIMC" placeholder="Altura (em metros)" step="0.01">
+        <input type="number" id="pesoIMC" placeholder="Peso (em kg)">
+        <button onclick="calcularIMC()">Calcular IMC</button>
+        <p class="result" id="resultadoIMC"></p>
+
+        <!-- Peso Ideal -->
+        <h3>Calcule seu Peso Ideal</h3>
+        <input type="number" id="alturaPesoIdeal" placeholder="Altura (em metros)" step="0.01">
+        <select id="generoPesoIdeal">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+        </select>
+        <button onclick="calcularPesoIdeal()">Calcular Peso Ideal</button>
+        <p class="result" id="resultadoPesoIdeal"></p>
+
+        <!-- Taxa Metabólica Basal -->
+        <h3>Calcule sua Taxa Metabólica Basal (TMB)</h3>
+        <input type="number" id="idadeTMB" placeholder="Idade (em anos)">
+        <input type="number" id="alturaTMB" placeholder="Altura (em cm)">
+        <input type="number" id="pesoTMB" placeholder="Peso (em kg)">
+        <select id="generoTMB">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+        </select>
+        <button onclick="calcularTMB()">Calcular TMB</button>
+        <p class="result" id="resultadoTMB"></p>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
